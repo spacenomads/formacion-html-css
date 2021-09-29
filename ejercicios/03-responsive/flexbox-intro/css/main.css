@@ -1,0 +1,26 @@
+.flex {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+  box-sizing: border-box;
+  column-gap: 10px;
+  row-gap: 20px;
+}
+
+.flex__child {
+  order: 1;
+  flex-basis: 100px;
+}
+
+.flex__child--6 {
+  height: 100px;
+  flex-grow: 1;
+}
+
+.flex__child--10 {
+  height: 50px;
+  order: 0;
+  flex-grow: 0;
+}

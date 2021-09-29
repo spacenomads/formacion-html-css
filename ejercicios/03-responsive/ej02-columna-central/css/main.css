@@ -1,0 +1,29 @@
+.page__header,
+.page__section,
+.page__footer {
+  margin-top: 10px;
+  border: 2px solid purple;
+}
+
+
+.container {
+  max-width: 1120px;
+  margin: 0 25px;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    margin: 0 48px;
+  }
+}
+
+@media screen and (min-width: calc( 1120px + 48px * 2)) {
+  .container {
+    margin: 0 auto;
+  }
+}
+
+
+.page__section--alt {
+  background: lime;
+}

@@ -1,0 +1,42 @@
+.gallery {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0; /* Truco cajellero para evitar los 4px de separación que pone el navegador */
+}
+.gallery__item {
+  width: 100%;
+  overflow: hidden;
+  display: inline-block;
+}
+.media {
+  padding: 10px;
+  box-sizing: border-box;
+}
+.media__image {
+  width: 100%;
+}
+
+@media screen and (min-width: 500px) {
+  .gallery__item {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .gallery__item {
+    width: 33.33333333%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .gallery__item {
+    width: 25%;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .gallery__item {
+    width: 20%;
+  }
+}

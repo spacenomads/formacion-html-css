@@ -1,0 +1,15 @@
+body {
+  margin: 0;
+}
+
+#globalCountdown {
+  background-color: tomato;
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
+  color: white;
+  font-size: 200px;
+  font-family: roboto slab, arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  background-color: white;
+  font-family: Comic Sans MS, arial, sans-serif;
+}
+
+
+
+
+
+/* COLORS */
+.colors {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+}
+
+.color 
+  padding: 10px;
+  height: 100px;
+  order: 1;
+  width: 50%;
+  box-sizing: border-box;
+}
+
+.color--featured {
+  order: 0;
+  width: 100%;
+}
+
+
+.color__code {
+  background-color: white;
+  padding: 3px 5px;
+  border-radius: 5px;
+}

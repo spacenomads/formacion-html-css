@@ -1,0 +1,36 @@
+body {
+  margin: 2em;
+  background-color: white;
+  font-family: Comic Sans MS, arial, sans-serif;
+}
+
+
+
+
+.yt-btn {
+  background-color: red;
+  border: 0;
+  padding: 0;
+  color: white;
+  line-height: 45px;
+  padding: 0 25px;
+  font-size: 22px;
+  border-radius: 23px;
+  min-width: 165px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.yt-btn::after {
+  content: '';
+  width: 20px;
+  height: 20px;
+  background: url(../img/play-solid-1.svg) center no-repeat;
+  display: inline-block;
+}
+
+.yt-btn__label {
+  flex-grow: 1;
+}

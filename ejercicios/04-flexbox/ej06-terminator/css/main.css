@@ -1,0 +1,19 @@
+.terminator {
+  display: flex;
+  align-items: start;
+}
+.terminator__cover {
+  width: 300px;
+  
+}
+.terminator__img {
+  width: 100%;
+  min-width: 200px;
+} 
+
+.terminator__content {
+  width: 400px;
+  flex-shrink: 0;
+}
+.terminator__title {}
+.terminator__summary {}

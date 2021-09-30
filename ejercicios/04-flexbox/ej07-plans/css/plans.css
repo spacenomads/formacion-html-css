@@ -1,0 +1,113 @@
+body {
+  margin: 0;
+  background-color: #fff;
+}
+
+
+
+.princin__plans {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.pricing__plan {}
+
+
+
+
+/* PLAN */
+.plan {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 24px rgba(0,0,0,.15);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: 100%;
+}
+.plan__header { }
+.plan__title { }
+.plan__summary {
+  width: 180px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.plan__body {
+  background: #f4f5f6;
+  flex-grow: 1;
+  text-align: left;
+  padding: 30px 0;
+}
+
+
+.plan__features { }
+.plan__feature {
+  display: flex;
+  margin-bottom: 20px;
+  gap: 15px;
+  align-items: start;
+}
+
+.plan__feature:last-child {
+  margin-bottom: 0;
+}
+
+.plan__feature-content {
+  
+}
+.plan__feature-info {
+  
+}
+.plan__feature-description { 
+  padding-top: 4px;
+  margin: 0;
+}
+.plan__feature-note { 
+  margin: 0;
+}
+
+
+
+.plan__footer {
+  padding: 20px;
+}
+
+.plan__monthly {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 2px;
+  padding-top: 10px;
+}
+.plan__monthly-value {
+  font-size: 2em;
+  margin-top: -10px;
+}
+.plan__monthly-currency {
+  padding-top: 4px;
+  margin-top: -10px;
+  order: -1;
+}
+
+.plan__actions {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.plan__action { }
+
+.button {
+  border: 2px solid #c4c4c4;
+  padding: 5px 10px;
+  display: inline-block;
+  cursor: pointer;
+  color: inherit;
+  font-weight: bold;
+  border-radius: 4px;
+  text-decoration: none;
+  width: 100%;
+  box-sizing: border-box;
+}

@@ -1,0 +1,53 @@
+body {
+  margin: 2em;
+  background-color: #eee;
+  font-family: Roboto, arial, sans-serif;
+}
+
+.movie {
+  background-color: white;
+  padding: 20px;
+  border-radius: 3px;
+}
+
+.movie__title {
+  margin: 0;
+  font-family: roboto slab, times, serif;
+}
+
+.movie__cover {
+  display: none;
+}
+
+.movie__image {
+  width: 100%;
+}
+
+.movie__summary {}
+
+@media (min-width: 500px) {
+  .movie {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: auto 1fr;
+    column-gap: 15px;
+    grid-template-areas:
+      "cover title"
+      "cover summary"
+    ;
+  }
+
+  .movie__title {
+    grid-area: title;
+  }
+
+  .movie__cover {
+    display: block;
+    grid-area: cover;
+  }
+
+  .movie__summary {
+    grid-area: summary;
+  }
+
+}

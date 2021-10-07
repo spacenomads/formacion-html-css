@@ -1,0 +1,32 @@
+$font_size_default: 16;
+
+@function em($px, $context: $font_size_default) {
+  @return $px / $context * 1em;
+}
+
+
+
+.cruz-roja {
+  width: em(400);
+  height: em(400);
+  border: 1px solid red;
+  position: relative;
+  font-size: 3px;
+
+  &::before,
+  &::after {
+    content: '';
+    width: 50%;
+    height: 100%;
+    background-color: red;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+  }
+
+  &::after {
+    transform: translateX(-50%) rotate(90deg);
+  }
+}
+

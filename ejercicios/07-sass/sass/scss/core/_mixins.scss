@@ -1,0 +1,39 @@
+@mixin center-v() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+@mixin center($mode) {
+  @if $mode == v {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+  @if $mode == h {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    padding: 10px;
+  }
+}
+
+@mixin title($type) {
+	@if $type == h1 {
+		font-size: 45px;
+		line-height: 160%;
+		font-weight: 600;
+	}
+	@if $type == h2 {
+		font-size: 32px;
+		line-height: 153%;
+		font-weight: 500;
+	}
+	@if $type == h3 {
+		font-size: 21px;
+		line-height: 140%;
+		font-weight: 400;
+	}
+}

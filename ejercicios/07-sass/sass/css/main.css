@@ -1,0 +1,122 @@
+/* Este comentario no aparece en modo comprimido */
+/*! Este comentario aparece siempre */
+body {
+  background: cyan;
+  -webkit-box-flex: 8;
+  -webkit-flex-grow: 8;
+      -ms-flex-positive: 8;
+          flex-grow: 8;
+  font-size: 1.9375rem;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  display: -ms-grid;
+  display: grid;
+}
+
+p {
+  font-size: 300px;
+}
+
+small {
+  font-size: 0.08em;
+}
+
+.title {
+  font-size: 45px;
+  line-height: 160%;
+  font-weight: 600;
+}
+
+.box {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+  height: 12.5rem;
+  width: 12.5rem;
+  background: orange;
+  padding: 0.3125rem;
+  font-size: 2em;
+}
+
+.title {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+  -webkit-align-items: start;
+      -ms-flex-align: start;
+          align-items: start;
+  padding: 10px;
+  color: green;
+}
+
+@media (min-width: 48em) {
+  .title {
+    color: orange;
+  }
+}
+
+.title {
+  color: green;
+}
+
+@media (min-width: 48em) {
+  .title {
+    color: orange;
+  }
+}
+
+.hero {
+  color: blue;
+}
+
+.hero__title {
+  color: red;
+}
+
+.hero__content {
+  color: red;
+}
+
+.hero__link {
+  color: red;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+p .link {
+  color: blue;
+}
+
+.footer {
+  color: cyan;
+}

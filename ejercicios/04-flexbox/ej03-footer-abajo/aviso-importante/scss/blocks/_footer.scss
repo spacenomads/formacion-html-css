@@ -1,0 +1,27 @@
+/* FOOTER */
+.footer {
+  /* margin-top: auto; */
+}
+.footer .wrapper {
+  border-top: rem(1) solid rgba(255, 255, 255, .5);
+  padding: rem(30) 0;
+}
+
+.motto {
+  margin: 0 auto;
+  width: rem(130);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: rem(5);
+}
+
+.motto::before {
+  content: '';
+  width: rem($motto);
+  height: rem($motto);
+  background: url(../img/radiation-alt-regular.svg) center no-repeat;
+  display: block;
+}

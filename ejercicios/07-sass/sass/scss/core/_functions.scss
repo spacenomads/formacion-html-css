@@ -1,0 +1,11 @@
+@function double($value) {
+  @return $value * 2;
+}
+
+@function rem($px) {
+  @return $px / $font_size_default * 1rem;
+}
+
+@function em($px, $context: $font_size_default) {
+  @return $px / $context * 1em;
+}

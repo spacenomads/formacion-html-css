@@ -1,0 +1,103 @@
+// Este comentario solo aparece en SCSS
+/* Este comentario no aparece en modo comprimido */
+/*! Este comentario aparece siempre */
+@import 'core/variables';
+@import 'core/mixins';
+@import 'core/functions';
+
+
+
+
+
+
+
+
+// STYLES
+body {
+  background: $color_bg;
+  flex-grow: double(4);
+
+  font-size: rem(31);
+  border-radius: 5px;
+  display: grid;
+
+}
+
+p {
+  font-size: 300px;
+}
+
+small {
+  font-size: em(24, 300);
+}
+
+
+.title {
+  @include title(h1);
+}
+
+.box {
+  @include center(v);
+  
+  height: rem(200);
+  width: rem(200);
+  background: orange;
+  padding: rem(5);
+  font-size: 2em;
+}
+
+.title {
+  @include center(h);
+
+  color: green;
+}
+
+@media (min-width: em(768)) {
+  .title {
+    color: orange;
+  } 
+}
+
+
+.title {
+  color: green;
+
+  @media (min-width: em(768)) {
+    color: orange;
+  }
+}
+
+
+
+
+@import 'sections/hero';
+
+
+
+.link {
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+
+.link {
+  text-decoration: none;
+  
+  &:hover {
+    text-decoration: underline;
+  }
+
+  p & {
+    color: blue;
+  }
+}
+
+
+
+
+.footer {
+  color: $color_bg;
+}

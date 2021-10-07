@@ -1,0 +1,25 @@
+/* HEADER */
+.header {
+  background-color: rgba(pink, .4);
+  background-color: mix(black, tomato, 55%);
+  color: white;
+}
+
+.header .wrapper {
+  padding: rem(30) 0;
+}
+
+.header__title {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: rem(10);
+}
+
+.header__title::before {
+  content: '';
+  width: rem(40);
+  height: rem(40);
+  display: block;
+  background: url(../img/atom-light.svg) center no-repeat;
+}

@@ -1,0 +1,19 @@
+@import 'core/variables';
+
+
+@mixin center-v() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: blue;
+}
+
+body {
+  color: red;
+}
+
+@import 'layout/header';
+
+.grid__item {
+  @include center-v();
+}

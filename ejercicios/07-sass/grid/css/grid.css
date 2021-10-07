@@ -1,0 +1,33 @@
+
+body {
+  margin: 3em;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr) 2fr;
+  grid-template-rows: 100px 100px 100px;
+  grid-template-areas: 
+    "header header header header"
+    "col1 col2 col3 sidebar"
+    "col1 col2 col3 sidebar"
+  ;
+  gap: 30px;
+}
+
+.grid__item {
+  background: pink;
+  opacity: .5;
+}
+
+.grid__item--1 {
+  grid-area: header;
+}
+/* .grid__item--4 {
+  grid-row: 1/3;
+  grid-column: 3/4
+}
+
+.grid__item--5 {
+  grid-column: 2/ span 2;
+  grid-row: 3 / 4;
+} */
